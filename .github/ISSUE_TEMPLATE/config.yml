@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Avisar de un fallo de seguridad (privado)
+    url: https://github.com/ivanzv-z/zintercept/security/advisories/new
+    about: Solo lo verá el autor. No lo publiques como sugerencia.
+  - name: Web de Iván Z
+    url: https://ivanzv-z.github.io/
+    about: Descargas y apuntes técnicos.
