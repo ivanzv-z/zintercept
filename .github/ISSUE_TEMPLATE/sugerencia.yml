@@ -1,0 +1,54 @@
+name: Sugerir una mejora
+description: Propón una función nueva o un cambio en la interfaz de ZIntercept.
+title: "[Sugerencia] "
+labels: ["sugerencia"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por proponer una mejora.
+
+        **Esto es público**: cualquiera puede leerlo. No pegues tráfico capturado, cookies, tokens, contraseñas, URLs internas ni datos de clientes.
+        Si lo que quieres contar es un **fallo de seguridad**, no lo pongas aquí: usa el aviso privado (pestaña *Security* → *Report a vulnerability*).
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: ¿Qué tipo de mejora es?
+      options:
+        - Función nueva
+        - Cambio en la interfaz
+        - Algo que no funciona como esperaba
+        - Otra cosa
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Cuéntanos la idea
+      description: Qué te gustaría poder hacer y para qué lo usarías.
+      placeholder: "Me gustaría poder..."
+    validations:
+      required: true
+  - type: textarea
+    id: ahora
+    attributes:
+      label: ¿Cómo lo haces ahora? (opcional)
+      description: Si ahora lo resuelves de otra forma o con otra herramienta.
+  - type: input
+    id: version
+    attributes:
+      label: Versión de ZIntercept
+      description: Se rellena sola si vienes desde la app.
+      placeholder: "0.9.1"
+  - type: input
+    id: sistema
+    attributes:
+      label: Sistema
+      placeholder: "Windows / Linux"
+  - type: checkboxes
+    id: privado
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: He revisado que no incluyo datos privados (tráfico, cookies, credenciales, datos de clientes).
+          required: true
